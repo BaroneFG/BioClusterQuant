@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/977804016.svg)](https://doi.org/10.5281/zenodo.15339409)
+
 # Author: Francesco G. Barone, PhD
 
 # Affiliation: Biochemistry Section, Surgical Neurology Branch, National Institute of Neurological Disorders and Stroke, NIH, Bethesda, MD, USA
