@@ -1,0 +1,6 @@
+numpy>=1.26,<2.0
+pandas>=2.2,<3.0
+scikit-learn>=1.5,<2.0
+magicgui>=0.8,<1.0
+qtpy>=2.4,<3.0
+PyQt5>=5.15,<6.0
