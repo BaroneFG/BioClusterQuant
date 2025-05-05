@@ -1,0 +1,7 @@
+Identifier,Label,Avg_NND,Avg_Inverse_NND,NumFoci
+CondensedClusterResults53,CondensedCluster_Rep3.tif,0.34510,3.23617,10
+DispersedCluster_Results8,DispersedCluster_Rep4.tif,0.60499,2.29100,50
+MiddleCuster_Results7,MiddleCluster_Rep7.tif,0.41485,2.97610,43
+SinglePoint_Results49,SinglePoint_Rep6.tif,NaN,NaN,1
+TwoClose_Results25,TwoClose_Rep4.tif,0.16000,6.25000,2
+TwoFar_Results43,TwoFar_Rep5.tif,3.63494,0.27511,2
