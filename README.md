@@ -4,7 +4,7 @@
 
 # Affiliation: Biochemistry Section, Surgical Neurology Branch, National Institute of Neurological Disorders and Stroke, NIH, Bethesda, MD, USA
 
-# Email: baronefg@nih.gov
+# Email: francesco.barone@nih.gov
 
 This archive contains the BioClusterQuant v1.0.0 software package submitted to Zenodo.
 Structure:
