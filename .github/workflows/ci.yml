@@ -20,11 +20,13 @@ jobs:
         pip install pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-    # This is the "Ultimate" fix list for Qt5 on Linux
-    - name: Install Linux GUI libs
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y xvfb libxkbcommon-x11-0 libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-randr0 libxcb-render-util0 libxcb-xinerama0 libxcb-xfixes0 libgl1-mesa-glx libegl1 libdbus-1-3
+    # This specialized action automatically installs all correct Qt/Linux drivers
+    - name: Install Qt System Libs
+      uses: tlambert03/setup-qt-libs@v1
+
+    # We still need xvfb for the fake screen
+    - name: Install xvfb
+      run: sudo apt-get install -y xvfb
 
     - name: Run Tests
       run: |
