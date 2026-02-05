@@ -24,7 +24,7 @@ bibliography: paper.bib
 
 # Statement of Need
 
-The spatial organization of intracellular organelles and protein complexes is a critical readout in cell biology, yet standard analysis often stops at object counting. In processes such as autophagy or immune signaling, proteins redistribute into specific spatial configurations that are difficult to quantify manually [@Mizushima:2020].
+The spatial organization of intracellular organelles and protein complexes is a critical readout in cell biology, yet standard analysis often stops at object counting. In processes such as autophagy or immune signaling, proteins redistribute into specific spatial configurations that are difficult to quantify manually [@Mizushima:2020; @Fischer:2020; @Smith:2013; @Protter:2016; @Barone:2025]
 
 **BioClusterQuant** is designed for researchers who need to rigorously quantify these spatial phenotypes but lack the programming expertise to write custom spatial statistics scripts. While standard platforms like Fiji [@Schindelin:2012] excel at segmentation, they often lack streamlined, automated workflows for batch-calculating spatial relationships across experimental conditions. This tool bridges that gap, solving the problem of "batch processing spatial data" by providing a platform-agnostic, reproducible workflow for NND quantification.
 
