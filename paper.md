@@ -20,7 +20,7 @@ bibliography: paper.bib
 
 # Summary
 
-**BioClusterQuant** is an open-source Python tool designed to quantify the spatial clustering of intracellular structures (puncta) from fluorescence microscopy data. It functions as a post-processing pipeline that takes centroid coordinates exported from image segmentation software (such as Fiji/ImageJ) and computes spatial metrics—specifically Nearest Neighbor Distance (NND) and its inverse—to assess the degree of clustering at the single-cell level. The tool features a graphical user interface (GUI) built with `magicgui` [@magicgui], allowing researchers without programming experience to perform reproducible batch analysis on large datasets.
+**BioClusterQuant** is an open-source Python tool designed to quantify the spatial clustering of intracellular structures (puncta) from fluorescence microscopy data. It functions as a post-processing pipeline that takes centroid coordinates exported from image segmentation software (such as Fiji/ImageJ) and computes spatial metrics, specifically Nearest Neighbor Distance (NND) and its inverse, to assess the degree of clustering at the single-cell level. The tool features a graphical user interface (GUI) built with `magicgui` [@magicgui], allowing researchers without programming experience to perform reproducible batch analysis on large datasets.
 
 # Statement of Need
 
