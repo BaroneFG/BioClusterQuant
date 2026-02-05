@@ -1,5 +1,5 @@
 ---
-title: 'BioClusterQuant: a GUI-based Python tool for quantifying intracellular puncta clustering from centroid coordinates'
+title: 'BioClusterQuant: a GUI-based Python tool for quantifying intracellular puncta clustering in microscopy images'
 tags:
   - Python
   - microscopy
