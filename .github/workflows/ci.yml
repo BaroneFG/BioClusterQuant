@@ -20,11 +20,9 @@ jobs:
         pip install pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-    # This specialized action automatically installs all correct Qt/Linux drivers
     - name: Install Qt System Libs
       uses: tlambert03/setup-qt-libs@v1
 
-    # We still need xvfb for the fake screen
     - name: Install xvfb
       run: sudo apt-get install -y xvfb
 
