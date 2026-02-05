@@ -40,7 +40,7 @@ Currently, researchers aiming to quantify puncta clustering face a dichotomy of 
 
 # Software Design
 
-The design of **BioClusterQuant** prioritizes **modularity** and **accessibility**. We made specific architectural choices to ensure the tool is lightweight and robust:
+The design of **BioClusterQuant** prioritizes **modularity** and **accessibility** (Figure 1). We made specific architectural choices to ensure the tool is lightweight and robust:
 
 * **Decoupled Architecture:** By accepting simple `.csv` centroid inputs rather than raw images, we decoupled the potentially subjective step of segmentation from the objective step of quantification. This makes the tool compatible with any upstream segmentation software that exports coordinates.
 * **Vectorized Computation:** Internally, the tool uses `scikit-learn`'s `NearestNeighbors` algorithm (BallTree or KDTree) [@scikit-learn] to compute distances. This is significantly faster and more memory-efficient than naive pairwise distance calculations, enabling scalable processing of high-content screening datasets.
