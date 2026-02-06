@@ -24,7 +24,7 @@ BioClusterQuant is an open-source Python tool designed to quantify the spatial c
 
 # Statement of Need
 
-The spatial organization of intracellular organelles and protein complexes is a critical readout in cell biology, yet standard analysis often stops at object counting. In processes such as autophagy or immune signaling, proteins redistribute into puncta-like structures, such as autophagosomes, stress granules, and peroxisomes, whose specific spatial configurations are difficult to quantify manually [@Mizushima:2020; @Fischer:2020; @Smith:2013; @Protter:2016; @Barone:2025]
+The spatial organization of intracellular organelles and protein complexes is a critical readout in cell biology, yet standard analysis often stops at object counting. In processes such as autophagy or immune signaling, puncta-like structures, such as autophagosomes, stress granules, and peroxisomes, exhibit specific spatial configurations that are difficult to quantify manually [@Mizushima:2020; @Fischer:2020; @Smith:2013; @Protter:2016; @Barone:2025]
 
 BioClusterQuant is designed for researchers who need to rigorously quantify these spatial phenotypes but lack the programming expertise to write custom spatial statistics scripts. While standard platforms like Fiji [@Schindelin:2012] excel at segmentation, they often lack streamlined, automated workflows for batch-calculating spatial relationships across experimental conditions. This tool bridges that gap, solving the problem of "batch processing spatial data" by providing a platform-agnostic, reproducible workflow for NND quantification.
 
@@ -67,6 +67,6 @@ No generative AI tools were used to write the manuscript text, generate figures,
 
 # Acknowledgements
 
-This work was supported by the Intramural Research Program (IRP) of the National Institute of Neurological Disorders and Stroke (NINDS). We acknowledge the support of the NHLBI Flow Cytometry Core and the NINDS Light Microscopy Core.
+This work was supported by the Intramural Research Program (IRP) of the National Institute of Neurological Disorders and Stroke (NINDS). The findings and conclusions presented in this paper are those of the authors and do not necessarily reflect the views of the NIH or the U.S. Department of Health and Human Services. We acknowledge the support of the NHLBI Flow Cytometry Core and the NINDS Light Microscopy Core.
 
 # References
