@@ -20,13 +20,13 @@ bibliography: paper.bib
 
 # Summary
 
-**BioClusterQuant** is an open-source Python tool designed to quantify the spatial clustering of intracellular structures (puncta) from fluorescence microscopy data. It functions as a post-processing pipeline that takes centroid coordinates exported from image segmentation software (such as Fiji/ImageJ) and computes spatial metrics, specifically Nearest Neighbor Distance (NND) and its inverse, to assess the degree of clustering at the single-cell level. The tool features a graphical user interface (GUI) built with `magicgui` [@magicgui], allowing researchers without programming experience to perform reproducible batch analysis on large datasets.
+BioClusterQuant is an open-source Python tool designed to quantify the spatial clustering of intracellular structures (puncta) from fluorescence microscopy data. It functions as a post-processing pipeline that takes centroid coordinates exported from image segmentation software (such as Fiji/ImageJ) and computes spatial metrics, specifically Nearest Neighbor Distance (NND) and its inverse, to assess the degree of clustering at the single-cell level. The tool features a graphical user interface (GUI) built with `magicgui` [@magicgui], allowing researchers without programming experience to perform reproducible batch analysis on large datasets.
 
 # Statement of Need
 
-The spatial organization of intracellular organelles and protein complexes is a critical readout in cell biology, yet standard analysis often stops at object counting. In processes such as autophagy or immune signaling, proteins redistribute into specific spatial configurations that are difficult to quantify manually [@Mizushima:2020; @Fischer:2020; @Smith:2013; @Protter:2016; @Barone:2025]
+The spatial organization of intracellular organelles and protein complexes is a critical readout in cell biology, yet standard analysis often stops at object counting. In processes such as autophagy or immune signaling, proteins redistribute into puncta-like structures, such as autophagosomes, stress granules, and peroxisomes, whose specific spatial configurations are difficult to quantify manually [@Mizushima:2020; @Fischer:2020; @Smith:2013; @Protter:2016; @Barone:2025]
 
-**BioClusterQuant** is designed for researchers who need to rigorously quantify these spatial phenotypes but lack the programming expertise to write custom spatial statistics scripts. While standard platforms like Fiji [@Schindelin:2012] excel at segmentation, they often lack streamlined, automated workflows for batch-calculating spatial relationships across experimental conditions. This tool bridges that gap, solving the problem of "batch processing spatial data" by providing a platform-agnostic, reproducible workflow for NND quantification.
+BioClusterQuant is designed for researchers who need to rigorously quantify these spatial phenotypes but lack the programming expertise to write custom spatial statistics scripts. While standard platforms like Fiji [@Schindelin:2012] excel at segmentation, they often lack streamlined, automated workflows for batch-calculating spatial relationships across experimental conditions. This tool bridges that gap, solving the problem of "batch processing spatial data" by providing a platform-agnostic, reproducible workflow for NND quantification.
 
 # State of the Field
 
@@ -40,7 +40,7 @@ Currently, researchers aiming to quantify puncta clustering face a dichotomy of 
 
 # Software Design
 
-The design of **BioClusterQuant** prioritizes **modularity** and **accessibility** (Figure 1). We made specific architectural choices to ensure the tool is lightweight and robust:
+The design of BioClusterQuant prioritizes modularity and accessibility (Figure 1). We made specific architectural choices to ensure the tool is lightweight and robust:
 
 * **Decoupled Architecture:** By accepting simple `.csv` centroid inputs rather than raw images, we decoupled the potentially subjective step of segmentation from the objective step of quantification. This makes the tool compatible with any upstream segmentation software that exports coordinates.
 * **Vectorized Computation:** Internally, the tool uses `scikit-learn`'s `NearestNeighbors` algorithm (BallTree or KDTree) [@scikit-learn] to compute distances. This is significantly faster and more memory-efficient than naive pairwise distance calculations, enabling scalable processing of high-content screening datasets.
